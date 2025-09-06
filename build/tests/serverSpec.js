@@ -16,7 +16,7 @@ describe('Test API endpoint responses', () => {
         expect(response.status).toBe(404);
     });
     it('should return 200 for valid request', async () => {
-        const response = await request.get('/api/images?filename=fjord&width=200&height=200');
+        const response = await request.get('/api/images?filename=backpack&width=200&height=200');
         expect(response.status).toBe(200);
     });
 });

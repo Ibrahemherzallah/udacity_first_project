@@ -14,10 +14,11 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0",
+    "jasmine-spec-reporter": "^7.0.0",
     "sharp": "^0.34.3"
   },
   "devDependencies": {
-    "@types/express": "^5.0.3", 
+    "@types/express": "^5.0.3",
     "@types/jasmine": "^5.1.9",
     "@types/node": "^24.3.1",
     "@types/supertest": "^6.0.3",
