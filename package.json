@@ -5,6 +5,11 @@
   "scripts": {
     "build": "npx tsc",
     "start": "node build/index.js",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write",
+    "prettier": "prettier --config .prettierrc '*.js' --write",
     "dev": "npx ts-node src/index.ts",
     "test": "jasmine"
   },
@@ -13,6 +18,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
     "express": "^5.1.0",
     "jasmine-spec-reporter": "^7.0.0",
     "sharp": "^0.34.3"
@@ -22,7 +29,9 @@
     "@types/jasmine": "^5.1.9",
     "@types/node": "^24.3.1",
     "@types/supertest": "^6.0.3",
-    "eslint": "^9.34.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.35.0",
     "jasmine": "^5.10.0",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2",

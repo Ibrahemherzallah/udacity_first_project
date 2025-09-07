@@ -8,6 +8,6 @@ export const resizeImage = async (
 ): Promise<void> => {
   console.log("inputPath in imageProcessing is  ", inputPath);
   console.log("outputPath in imageProcessing is  ", outputPath);
-  
+
   await sharp(inputPath).resize(width, height).toFile(outputPath);
 };
